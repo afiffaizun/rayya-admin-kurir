@@ -249,6 +249,9 @@ interface AppState {
   completeTask: (id: string) => void
   updateStockQty: (id: string, delta: number) => void
   applyStockUpdate: (id: string) => void
+  addCourier: (data: Omit<Courier, "id" | "initials">) => void
+  updateCourier: (id: string, data: Partial<Courier>) => void
+  deleteCourier: (id: string) => void
 }
 
 export const useAppStore = create<AppState>((set) => ({
@@ -328,4 +331,42 @@ export const useAppStore = create<AppState>((set) => ({
   applyStockUpdate: (_id) => {
     /* no-op: visual feedback only */
   },
+  addCourier: (data) =>
+    set((s) => {
+      const initials = data.name
+        .split(" ")
+        .map((w) => w[0])
+        .join("")
+        .slice(0, 2)
+        .toUpperCase()
+      const id = `C-${String(s.couriers.length + 1).padStart(3, "0")}`
+      const colors = ["#1E88E5", "#43A047", "#FB8C00", "#8E24AA", "#E53935", "#00897B"]
+      const avatarColor = colors[s.couriers.length % colors.length]
+      return {
+        couriers: [...s.couriers, { ...data, id, initials, avatarColor }],
+      }
+    }),
+  updateCourier: (id, data) =>
+    set((s) => ({
+      couriers: s.couriers.map((c) =>
+        c.id === id
+          ? {
+              ...c,
+              ...data,
+              initials: data.name
+                ? data.name
+                    .split(" ")
+                    .map((w) => w[0])
+                    .join("")
+                    .slice(0, 2)
+                    .toUpperCase()
+                : c.initials,
+            }
+          : c
+      ),
+    })),
+  deleteCourier: (id) =>
+    set((s) => ({
+      couriers: s.couriers.filter((c) => c.id !== id),
+    })),
 }))

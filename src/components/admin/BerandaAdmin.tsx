@@ -20,6 +20,7 @@ export default function BerandaAdmin() {
   const orders = useAppStore((s) => s.orders)
   const orderTab = useAppStore((s) => s.orderTab)
   const setOrderTab = useAppStore((s) => s.setOrderTab)
+  const setAdminView = useAppStore((s) => s.setAdminView)
 
   const filtered = orders.filter((o) => {
     if (orderTab === "Semua") return true
@@ -73,6 +74,7 @@ export default function BerandaAdmin() {
           capacity={1000}
           actionLabel="Kelola Stok"
           note="Optimalkan pengiriman untuk menjaga sirkulasi stok."
+          onClick={() => setAdminView("stok")}
         />
         <StockCard
           title="GALON KOSONG"
@@ -83,6 +85,7 @@ export default function BerandaAdmin() {
           actionLabel="Update Galon"
           note="Kumpulkan galon kosong untuk diisi ulang."
           actionVariant="outline-danger"
+          onClick={() => setAdminView("stok")}
         />
       </div>
 
@@ -215,6 +218,7 @@ function StockCard({
   actionLabel,
   note,
   actionVariant = "primary",
+  onClick,
 }: {
   title: string
   icon: React.ReactNode
@@ -224,6 +228,7 @@ function StockCard({
   actionLabel: string
   note: string
   actionVariant?: "primary" | "outline-danger"
+  onClick?: () => void
 }) {
   const pct = Math.round((value / capacity) * 100)
   return (
@@ -267,13 +272,14 @@ function StockCard({
       <div className="mt-4 flex justify-end">
         {actionVariant === "primary" ? (
           <button
+            onClick={onClick}
             className="rounded-lg px-3 py-1.5 text-xs font-semibold text-white"
             style={{ background: BRAND.blue }}
           >
             {actionLabel}
           </button>
         ) : (
-          <button className="rounded-lg border border-red-400 px-3 py-1.5 text-xs font-semibold text-red-500 hover:bg-red-50">
+          <button onClick={onClick} className="rounded-lg border border-red-400 px-3 py-1.5 text-xs font-semibold text-red-500 hover:bg-red-50">
             {actionLabel}
           </button>
         )}

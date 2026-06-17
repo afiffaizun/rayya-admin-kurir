@@ -252,6 +252,7 @@ interface AppState {
   addCourier: (data: Omit<Courier, "id" | "initials">) => void
   updateCourier: (id: string, data: Partial<Courier>) => void
   deleteCourier: (id: string) => void
+  addOrder: (data: Omit<AdminOrder, "id">) => void
 }
 
 export const useAppStore = create<AppState>((set) => ({
@@ -369,4 +370,10 @@ export const useAppStore = create<AppState>((set) => ({
     set((s) => ({
       couriers: s.couriers.filter((c) => c.id !== id),
     })),
+  addOrder: (data) =>
+    set((s) => {
+      const num = s.orders.length + 2400 + 1
+      const id = `#ORD-${num}`
+      return { orders: [{ ...data, id }, ...s.orders] }
+    }),
 }))

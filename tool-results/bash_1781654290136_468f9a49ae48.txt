@@ -1,0 +1,1070 @@
+========== login_admin.json ==========
+# UI Design Detailed Description
+
+## 1. Overall Layout and Structure
+The UI displays a clean, centered login interface for an admin panel. The layout follows a vertical stack structure with:
+- A header section containing the logo, title, and subtitle
+- A login form card positioned below the header
+- All elements are centered horizontally on a white background
+- The design uses ample white space for a minimalist, professional appearance
+
+## 2. Colors Used
+- Background: `#FFFFFF` (pure white)
+- Primary blue: `#0066FF` (for logo, button, and text)
+- Light gray: `#F5F5F5` (for input fields background)
+- Dark gray: `#333333` (for labels and text)
+- Light blue accent: `#E6F0FF` (subtle background gradient in corners)
+- Input border: `#E0E0E0` (light gray)
+- Button text: `#FFFFFF` (white)
+
+## 3. Text Content
+- "Admin" (large title)
+- "Pengantaran Cepat & Higienis" (subtitle)
+- "Username" (label)
+- "username" (placeholder in input field)
+- "PIN / Kata Sandi" (label)
+- "Masukkan 6 digit PIN" (placeholder in input field)
+- "Lupa PIN?" (link text)
+- "Masuk Sekarang" (button text with arrow)
+
+## 4. UI Components
+- **Logo**: Blue square with rounded corners containing a white water drop icon
+- **Title**: "Admin" text
+- **Subtitle**: "Pengantaran Cepat & Higienis" text
+- **Login Card**: White container with subtle shadow and rounded corners
+- **Username Input**: Text input field with user icon
+- **PIN Input**: Text input field with lock icon and eye icon for visibility toggle
+- **Forgot PIN Link**: "Lupa PIN?" text link
+- **Login Button**: Blue button with white text and right arrow icon
+
+## 5. Spacing and Sizing
+- Overall page: Full viewport height with centered content
+- Logo: 60px × 60px square
+- Title: Large font size, ample margin below
+- Subtitle: Smaller font, centered below title
+- Login card: 400px width, auto height with padding
+- Input fields: Full width of card, 48px height
+- Button: Full width of card, 48px height
+- Spacing between elements: Generous vertical margins (approximately 24px between sections)
+
+## 6. Typography
+- **Title**: Sans-serif font, bold weight, approximately 36px
+- **Subtitle**: Sans-serif font, regular weight, approximately 16px
+- **Labels**: Sans-serif font, regular weight, approximately 14px
+- **Input placeholders**: Sans-serif font, regular weight, approximately 14px, light gray color
+- **Button text**: Sans-serif font, medium weight, approximately 16px
+- **Link text**: Sans-serif font, regular weight, approximately 14px, blue color
+
+## 7. Visual Effects
+- **Shadow**: Subtle shadow on login card (rgba(0,0,0,0.1) with 0-2px offset)
+- **Borders**: Light gray border on input fields (1px)
+- **Rounded corners**: All cards and inputs have 8px border radius
+- **Gradient**: Subtle blue gradient in top-right and bottom-left corners of the page
+- **Hover effects**: (implied) Button likely has hover state with slightly darker blue
+- **Focus states**: Input fields likely have blue border when focused
+
+## 8. Icon Descriptions
+- **Logo icon**: White water drop symbol inside blue square
+- **Username icon**: Gray user silhouette icon (person)
+- **PIN icon**: Gray lock icon
+- **Eye icon**: Gray eye symbol for password visibility toggle
+- **Arrow icon**: White right-pointing arrow inside blue button
+
+The design emphasizes clarity and simplicity, with a professional blue and white color scheme that suggests reliability and cleanliness, appropriate for an admin interface related to delivery services.
+
+========== login_kurir.json ==========
+### 1. Overall Layout and Structure  
+The UI is a **mobile login screen** for a courier service ("Kurir Water") with a vertical, centered layout. The design is minimalistic and focused on user authentication, with a clear hierarchy of elements:  
+
+- **Top Bar**: A navigation bar with a back button and title.  
+- **Header Section**: A logo, brand name, and tagline.  
+- **Form Section**: A white card containing input fields and a login button.  
+- **Background**: A soft gradient (light blue to white) that fades from the bottom to the top, creating a clean, modern look.  
+
+
+### 2. Colors Used (Hex Codes)  
+- **Primary Blue**: `#007AFF` (used for the logo, button, and icon)  
+- **Text (Primary)**: `#000000` (black, for labels and main text)  
+- **Text (Secondary)**: `#007AFF` (blue, for the "Lupa PIN?" link)  
+- **Background**: `#FFFFFF` (white) with a gradient overlay: `#E6F7FF` (light blue) at the bottom, fading to `#FFFFFF` at the top.  
+- **Input Field Background**: `#F8F8F8` (light gray)  
+- **Input Field Border**: `#E0E0E0` (light gray)  
+- **Icon (Username)**: `#999999` (gray)  
+- **Icon (PIN)**: `#999999` (gray)  
+- **Eye Icon (Show/Hide PIN)**: `#999999` (gray)  
+
+
+### 3. Text Content (Original Language: Indonesian)  
+- **Top Bar**: "Masuk Kurir" (Login Courier)  
+- **Brand Name**: "Kurir Water"  
+- **Tagline**: "Pengantaran Cepat & Higienis" (Fast & Hygienic Delivery)  
+- **Username Label**: "Username"  
+- **Username Placeholder**: "Contoh: K-123456" (Example: K-123456)  
+- **PIN Label**: "PIN / Kata Sandi" (PIN / Password)  
+- **PIN Placeholder**: "Masukkan 6 digit PIN" (Enter 6-digit PIN)  
+- **Forgot PIN Link**: "Lupa PIN?" (Forgot PIN?)  
+- **Login Button**: "Masuk Sekarang" (Login Now)  
+
+
+### 4. UI Components  
+- **Navigation Bar**:  
+  - Left-aligned back arrow icon (system default, `#007AFF`).  
+  - Title "Masuk Kurir" (bold, `#000000`).  
+
+- **Logo**:  
+  - Blue square (`#007AFF`) with a white water drop icon (stylized, rounded edges).  
+
+- **Form Card**:  
+  - White rounded rectangle (`#FFFFFF`) with a subtle shadow (see "Visual Effects" below).  
+  - Contains two input fields and a button.  
+
+- **Input Fields**:  
+  - **Username Field**:  
+    - Label: "Username" (left-aligned, `#000000`).  
+    - Input: Rounded rectangle (`#F8F8F8` background, `#E0E0E0` border).  
+    - Icon: Gray user icon (left-aligned, `#999999`).  
+    - Placeholder: "Contoh: K-123456" (gray, `#999999`).  
+  - **PIN Field**:  
+    - Label: "PIN / Kata Sandi" (left-aligned, `#000000`).  
+    - Input: Rounded rectangle (`#F8F8F8` background, `#E0E0E0` border).  
+    - Icon: Gray lock icon (left-aligned, `#999999`).  
+    - Placeholder: "Masukkan 6 digit PIN" (gray, `#999999`).  
+    - Eye Icon: Gray (right-aligned, `#999999`) to toggle PIN visibility.  
+
+- **Forgot PIN Link**:  
+  - Right-aligned, blue text ("Lupa PIN?"), underlined (subtle).  
+
+- **Login Button**:  
+  - Blue rounded rectangle (`#007AFF` background, no border).  
+  - White text ("Masuk Sekarang") with a right arrow icon (white).  
+
+
+### 5. Spacing and Sizing  
+- **Top Bar**: Height ~56px (standard mobile navigation bar).  
+- **Logo**: Size ~80x80px, centered vertically/horizontally.  
+- **Brand Name**: Font size ~32px, margin-top ~16px below logo.  
+- **Tagline**: Font size ~14px, margin-top ~8px below brand name.  
+- **Form Card**: Padding ~24px (top/bottom) and ~16px (left/right).  
+- **Input Fields**: Height ~48px, margin-top ~16px (between fields).  
+- **Login Button**: Height ~48px, margin-top ~24px (below PIN field), width ~100% (full card width).  
+- **Icons**: Size ~20x20px (input fields), ~24x24px (logo).  
+- **Eye Icon**: Size ~20x20px (PIN field).  
+
+
+### 6. Typography  
+- **Font Family**: Sans-serif (system default, e.g., SF Pro Text on iOS).  
+- **Top Bar Title**: Bold, 17px (`#000000`).  
+- **Brand Name**: Bold, 32px (`#007AFF`).  
+- **Tagline**: Regular, 14px (`#000000`).  
+- **Form Labels**: Regular, 16px (`#000000`).  
+- **Input Placeholders**: Regular, 14px (`#999999`).  
+- **Forgot PIN Link**: Regular, 14px (`#007AFF`).  
+- **Login Button Text**: Bold, 16px (`#FFFFFF`).  
+
+
+### 7. Visual Effects  
+- **Shadow**: Form card has a subtle shadow (`0 2px 8px rgba(0,0,0,0.1)`) to create depth.  
+- **Gradient Background**: Soft blue-to-white gradient (`#E6F7FF` to `#FFFFFF`) from bottom to top, adding a calm, modern feel.  
+- **Rounded Corners**: All input fields and the form card have 8px radius.  
+- **Button Hover/Active State**: (Implied) Blue background darkens slightly (`#005BB5`) on press (not visible in static image but standard for mobile UI).  
+
+
+### 8. Icon Descriptions  
+- **Back Arrow**: System default (left-pointing arrow, `#007AFF`), used in the top navigation bar.  
+- **Logo Icon**: White water drop (stylized, rounded) inside a blue square (`#007AFF`).  
+- **Username Icon**: Gray user silhouette (left-aligned in the input field).  
+- **PIN Icon**: Gray lock (left-aligned in the input field).  
+- **Eye Icon**: Gray eye (right-aligned in the PIN field, toggles between "show" and "hide" PIN).  
+- **Login Button Icon**: White right-pointing arrow (next to "Masuk Sekarang" text).  
+
+
+This design prioritizes clarity and ease of use, with a focus on the login flow. The color scheme (blue and white) conveys trust and cleanliness, aligning with the "hygienic delivery" tagline. All elements are spaced generously to avoid clutter, and typography is consistent for readability.
+
+========== beranda_admin.json ==========
+# AquaWater Dashboard UI Design - Extreme Detail Analysis
+
+## 1. Overall Layout and Structure
+The UI follows a classic dashboard layout with a left sidebar navigation and main content area. The structure is divided into:
+- **Left Sidebar**: Fixed width navigation menu (approximately 200px)
+- **Main Content Area**: Occupies remaining width with header, dashboard summary cards, and order table
+- **Header**: Contains logo, search bar, notifications, help, and user profile
+- **Content Sections**: Dashboard summary cards (3), stock management cards (2), and order table with tabs
+
+## 2. Color Scheme (Hex Codes)
+- **Primary Blue**: #2563EB (brand color)
+- **Sidebar Active**: #1D4ED8 (darker blue for active nav item)
+- **Background**: #F8FAFC (light gray/off-white)
+- **Card Background**: #FFFFFF (white)
+- **Text Primary**: #111827 (dark gray/black)
+- **Text Secondary**: #6B7280 (medium gray)
+- **Success Green**: #10B981
+- **Warning Yellow**: #F59E0B
+- **Danger Red**: #EF4444
+- **Info Blue**: #3B82F6
+- **Border Color**: #E5E7EB (light gray)
+- **Progress Bar Blue**: #3B82F6
+- **Button Primary**: #2563EB
+- **Button Secondary**: #F3F4F6 (light gray)
+- **Button Text**: #374151 (dark gray)
+
+## 3. Text Content (Original Language - Indonesian)
+- **Logo/Brand**: "AquaWater"
+- **Sidebar Navigation**:
+  - "Beranda" (Home)
+  - "Pesanan" (Orders)
+  - "Kurir" (Courier)
+  - "Manajemen Stok" (Stock Management)
+- **Header Search Placeholder**: "Cari pesanan, armada, atau inventaris..." (Search orders, fleet, or inventory...)
+- **Dashboard Title**: "Dashboard Ringkasan" (Summary Dashboard)
+- **Last Updated**: "Terakhir diperbarui: 12 Oktober 2023, 14:30 WIB" (Last updated: October 12, 2023, 14:30 WIB)
+- **Summary Cards**:
+  - "PESANAN AKTIF" (Active Orders)
+  - "HARI INI" (Today)
+  - "PENDAPATAN (MTD)" (Revenue (MTD))
+  - "BULAN INI" (This Month)
+  - "STATUS STOK" (Stock Status)
+  - "INVENTARIS LANGSUNG" (Direct Inventory)
+  - "Galon Total" (Total Gallons)
+- **Stock Management**:
+  - "GALON ISI" (Filled Gallons)
+  - "Kelola Stok" (Manage Stock)
+  - "Kapasitas: 1,000" (Capacity: 1,000)
+  - "Optimalkan pengiriman untuk menjaga sirkulasi stok." (Optimize delivery to maintain stock circulation.)
+  - "GALON KOSONG" (Empty Gallons)
+  - "Update Galon" (Update Gallons)
+- **Order Table**:
+  - "Papan Pesanan" (Order Board)
+  - "Semua" (All)
+  - "Aktif" (Active)
+  - "Selesai" (Completed)
+  - Column Headers: "ID PESANAN", "PELANGGAN", "LOKASI", "ITEMS", "TOTAL", "STATUS", "AKSI"
+  - Order Statuses: "Ditolak" (Rejected), "Dalam Pengiriman" (In Delivery), "Diproses" (Processing)
+- **Order Details**:
+  - "#ORD-2401", "#ORD-2405", "#ORD-2408"
+  - "Ahmad Faisal", "Linda Wijaya", "Budi Santoso"
+  - "Regular Client", "New Customer", "VIP Member"
+  - "Panggungharjo, Sewon Rt3", "Jl. Bantul Km 5, Bantul", "Bambanglipuro, kost indah Rt2"
+  - "5 Galon Mineral", "2 Galon Mineral", "10 Galon Mineral"
+  - "Rp 50.000", "Rp 15.000", "Rp 100.000"
+
+## 4. UI Components
+- **Logo**: "AquaWater" text with water droplet icon
+- **Search Bar**: Input field with magnifying glass icon
+- **Notification Bell**: Bell icon with notification indicator
+- **Help Icon**: Question mark in circle
+- **User Profile**: Circular avatar with dropdown
+- **Sidebar Navigation**: Vertical menu with icons and text
+- **Dashboard Cards**: 5 cards in 2 rows (3 in top row, 2 in bottom row)
+- **Progress Bar**: Horizontal bar in stock card
+- **Tab Navigation**: 3 tabs for order table filtering
+- **Data Table**: Order listing with 7 columns
+- **Status Badges**: Colored badges for order status
+- **Action Icons**: Eye icons for view actions
+- **Button**: "Update Galon" with red border
+
+## 5. Spacing and Sizing
+- **Sidebar Width**: ~200px
+- **Header Height**: ~60px
+- **Card Padding**: 24px (horizontal) × 20px (vertical)
+- **Card Spacing**: 16px between cards
+- **Table Row Height**: ~56px
+- **Table Padding**: 12px horizontal × 16px vertical
+- **Border Radius**: 8px for cards and buttons
+- **Font Sizes**: 
+  - H1: 24px
+  - H2: 20px
+  - Body: 14px
+  - Small: 12px
+- **Margin/Padding**: Consistent 8px/16px/24px spacing throughout
+
+## 6. Typography
+- **Font Family**: Sans-serif (likely Inter or similar)
+- **Logo**: Bold, 20px
+- **Headings**: Semi-bold, 18-24px
+- **Body Text**: Regular, 14px
+- **Labels/Headers**: Medium, 12-14px
+- **Status Badges**: 12px, bold
+- **Table Text**: 12-14px
+
+## 7. Visual Effects
+- **Shadows**: Subtle shadow (0 1px 3px rgba(0,0,0,0.1)) on cards
+- **Borders**: Light gray borders around cards and table
+- **Gradients**: None visible
+- **Hover Effects**: Subtle on interactive elements
+- **Active States**: Blue background for active sidebar item
+- **Progress Bar**: Blue fill with rounded ends
+- **Status Badges**: Rounded corners, colored backgrounds
+
+## 8. Icon Descriptions
+- **Logo Icon**: Water droplet symbol in blue
+- **Home Icon**: House outline
+- **Orders Icon**: Shopping cart
+- **Courier Icon**: Delivery truck
+- **Stock Icon**: Box/warehouse
+- **Search Icon**: Magnifying glass
+- **Notification Icon**: Bell with dot indicator
+- **Help Icon**: Question mark in circle
+- **User Icon**: Circular profile picture
+- **Shopping Cart Icon**: (in active orders card)
+- **Money Icon**: (in revenue card)
+- **Warehouse Icon**: (in inventory card)
+- **Water Drop Icon**: (in filled gallons card)
+- **Recycle Icon**: (in empty gallons card)
+- **Eye Icons**: (view action in table)
+- **Status Icons**: Exclamation (rejected), truck (in delivery), clock (processing)
+
+This dashboard provides a comprehensive overview of the AquaWater business operations with clear visual hierarchy, consistent spacing, and intuitive navigation for managing orders, inventory, and revenue.
+
+========== manajemen_kurir.json ==========
+### 1. Overall Layout and Structure  
+The UI follows a **left sidebar + main content area** structure with a fixed header. The sidebar is 200px wide, and the main content occupies the remaining width (≈1200px on a standard screen). The layout is responsive, with the sidebar collapsing on smaller screens (implied by the compact design).  
+
+- **Sidebar**: Contains navigation links and a logo.  
+- **Header**: Spans the full width, includes a search bar, notifications, help, and user ID.  
+- **Main Content**: Divided into a stats section (3 cards) and a list section (courier details).  
+
+
+### 2. Colors (Hex Codes)  
+- **Primary Blue**: `#1E88E5` (logo, active sidebar item, buttons)  
+- **Light Gray (Background)**: `#F5F7FA` (main background)  
+- **White (Cards/Inputs)**: `#FFFFFF` (stats cards, courier list items)  
+- **Green (Active Status)**: `#4CAF50` (online status, "Kurir Aktif" card)  
+- **Red (Offline Status)**: `#F44336` (offline status)  
+- **Peach (Completed Tasks)**: `#FFCCBC` ("Selesai Hari Ini" card)  
+- **Gray (Text/Borders)**: `#757575` (secondary text, borders)  
+- **Dark Gray (Primary Text)**: `#212121` (headings, labels)  
+- **Light Blue (Button Hover)**: `#64B5F6` (button hover state)  
+
+
+### 3. Text Content (Original Language)  
+- **Logo**: "Fresh Water"  
+- **Sidebar Labels**:  
+  - "Beranda" (Home)  
+  - "Pesanan" (Orders)  
+  - "Kurir" (Couriers)  
+  - "Manajemen Stok" (Stock Management)  
+- **Header**:  
+  - Search placeholder: "Cari kurir atau tugas..." (Search courier or task...)  
+  - User ID: "ID Operasional: #HF-9021"  
+- **Main Content**:  
+  - Heading: "Manajemen Kurir" (Courier Management)  
+  - Subheading: "Pantau lokasi dan performa armada secara real-time." (Monitor location and fleet performance in real-time.)  
+  - Stats Cards:  
+    - "TOTAL KURIR" (Total Couriers)  
+    - "KURIR AKTIF" (Active Couriers)  
+    - "SELESAI HARI INI" (Completed Today)  
+  - List Heading: "Daftar Kurir Aktif" (Active Courier List)  
+  - Filter Button: "Filter"  
+  - Courier Details:  
+    - Names: "Andi Pratama", "Budi Santoso", "Agung Prasetyo", "Cahyo Suprapto", "Dodi Yanto"  
+    - Status: "Tersedia" (Available), "Offline"  
+    - Location Label: "LOKASI TERKINI" (Current Location)  
+    - Performance Label: "PERFORMA" (Performance)  
+    - Task Count: "(128 tugas)", "(100 tugas)", etc.  
+  - Action Button: "Atur Tugas" (Assign Task)  
+
+
+### 4. UI Components  
+- **Logo**: Text "Fresh Water" in bold, blue font (left sidebar top).  
+- **Sidebar Navigation**:  
+  - Icons (home, clipboard, truck, box) + text labels.  
+  - Active item ("Kurir") has a blue background and white text.  
+- **Header**:  
+  - Search bar (rounded, placeholder text).  
+  - Notification icon (bell), help icon (question mark), user ID (right-aligned).  
+- **Stats Cards**: 3 rectangular cards with icons, labels, and numbers.  
+- **Courier List**:  
+  - Repeating card items (5 total) with:  
+    - Profile photo (circular, 50px diameter).  
+    - Name (bold).  
+    - Status badge (green "Tersedia" or red "Offline").  
+    - Location text.  
+    - Performance rating (star + number + task count).  
+    - Action buttons: "Call" (phone icon) and "Atur Tugas" (gray button).  
+- **Filter Button**: Rounded, white with gray text and a filter icon.  
+- **Refresh Button**: Circular, blue with a refresh icon (bottom-right).  
+- **Floating Action Button (FAB)**: Blue, circular with a chart icon (bottom-right).  
+
+
+### 5. Spacing and Sizing  
+- **Sidebar**: 200px width, 60px height for navigation items.  
+- **Header**: 60px height, search bar width ≈ 400px.  
+- **Stats Cards**: 120px height, 250px width, margin: 10px.  
+- **Courier List Items**: 80px height, full width, margin: 10px 0.  
+- **Profile Photo**: 50px diameter, margin-right: 15px.  
+- **Buttons**: "Atur Tugas" (100px width, 35px height), "Filter" (80px width, 35px height).  
+- **Padding**: 20px (sidebar), 30px (main content), 15px (card inner padding).  
+
+
+### 6. Typography  
+- **Font Family**: Sans-serif (e.g., Roboto, Arial).  
+- **Logo**: Bold, 24px, `#1E88E5`.  
+- **Headings**: "Manajemen Kurir" (bold, 24px, `#212121`), "Daftar Kurir Aktif" (bold, 18px, `#212121`).  
+- **Subheadings**: "Pantau lokasi..." (regular, 14px, `#757575`).  
+- **Labels**: "TOTAL KURIR" (uppercase, 12px, `#757575`), "LOKASI TERKINI" (uppercase, 12px, `#757575`).  
+- **Names**: Bold, 16px, `#212121`.  
+- **Status Badges**: 12px, `#FFFFFF` (text), `#4CAF50` (green) or `#F44336` (red) (background).  
+- **Performance Text**: 14px, `#757575`.  
+- **Button Text**: 14px, `#212121` (gray buttons), `#FFFFFF` (blue buttons).  
+
+
+### 7. Visual Effects  
+- **Shadows**: Subtle box-shadow on stats cards and courier list items (`0 2px 4px rgba(0,0,0,0.1)`).  
+- **Borders**: Light gray border (`#E0E0E0`) around stats cards and the courier list container.  
+- **Gradients**: None (flat design).  
+- **Rounded Corners**: Search bar (8px), buttons (8px), profile photos (50% radius).  
+
+
+### 8. Icon Descriptions  
+- **Sidebar Icons**:  
+  - Home: House outline.  
+  - Pesanan: Clipboard.  
+  - Kurir: Truck.  
+  - Manajemen Stok: Box.  
+- **Header Icons**:  
+  - Search: Magnifying glass.  
+  - Notification: Bell.  
+  - Help: Question mark.  
+  - User ID: Checkmark (green) next to ID.  
+- **Stats Cards Icons**:  
+  - Total Kurir: Person outline.  
+  - Kurir Aktif: Lightning bolt.  
+  - Selesai Hari Ini: Checkmark.  
+- **Courier List Icons**:  
+  - Call: Phone outline.  
+  - Atur Tugas: No icon (text only).  
+- **Action Icons**:  
+  - Refresh: Circular arrow.  
+  - FAB: Chart bar.  
+
+
+This design emphasizes clarity, real-time monitoring, and easy task assignment for courier management, with a clean, modern aesthetic and intuitive navigation.
+
+========== manajemen_galon.json ==========
+### 1. Overall Layout and Structure  
+The UI is a **dashboard for a water delivery service** (Aqua Water) focused on stock management. It uses a **left sidebar + main content area** layout:  
+- **Left Sidebar**: Fixed-width (≈200px) vertical navigation bar with the brand logo at the top and menu items below.  
+- **Main Content Area**: Occupies the remaining width, divided into a header section and a data display section.  
+  - **Header**: Contains the page title, subtitle, search bar, and user profile.  
+  - **Data Display**: Includes three summary cards (total stock, filled gallons, empty gallons) and a product list table.  
+
+
+### 2. Colors (Hex Codes)  
+- **Primary Brand Color**: `#007BFF` (blue, used for buttons, active menu items, and progress bars).  
+- **Background Colors**:  
+  - Sidebar: `#F8F9FA` (light gray).  
+  - Main Content: `#FFFFFF` (white).  
+  - Card Backgrounds: `#FFFFFF` (white) with subtle shadows.  
+- **Text Colors**:  
+  - Primary Text: `#212529` (dark gray, for headings).  
+  - Secondary Text: `#6C757D` (gray, for subtitles, labels).  
+  - Accent Text: `#28A745` (green, for "Tersedia"), `#DC3545` (red, for "Butuh Isi"), `#FFA500` (orange, for "Kosong" progress bars).  
+- **Icons/Status Colors**:  
+  - Total Stock: `#007BFF` (blue icon).  
+  - Galon Isi: `#28A745` (green checkmark).  
+  - Galon Kosong: `#DC3545` (red exclamation mark).  
+- **Input/Buttons**:  
+  - Search Bar: `#F1F3F5` (light gray background) with `#6C757D` (gray text).  
+  - Update Buttons: `#007BFF` (blue) with `#FFFFFF` (white text).  
+
+
+### 3. Text Content (Original Language)  
+- **Sidebar**:  
+  - Brand: "Aqua Water" (logo text).  
+  - Menu Items: "Beranda" (Home), "Pesan" (Order), "Kurir" (Courier), "Manajemen Stok" (Stock Management).  
+- **Header**:  
+  - Title: "Manajemen Stok Galon" (Gallon Stock Management).  
+  - Subtitle: "Pantau dan kelola persediaan galon isi serta kosong secara real-time" (Monitor and manage filled and empty gallon stock in real-time).  
+  - Search Placeholder: "Cari tipe galon..." (Search gallon type...).  
+  - User Profile: "Felix Admin" (name), "CudP633/Pa P" (role).  
+- **Summary Cards**:  
+  - Total Stock: "Total Stok" (Total Stock), "998" (value), "Unit" (unit).  
+  - Galon Isi: "Galon Isi" (Filled Gallons), "842" (value), "Tersedia" (Available).  
+  - Galon Kosong: "Galon Kosong" (Empty Gallons), "156" (value), "Butuh Isi" (Needs Filling).  
+- **Product List**:  
+  - Section Title: "Daftar Produk & Pengelolaan" (Product List & Management).  
+  - Last Update: "Last Update: 5 Mins Ago".  
+  - Product 1: "Galon Mineral 19L (Isi)" (Filled Mineral 19L Gallon), "ID: GLN-MNR-19-F", "1,240" (quantity), "Unit" (unit), "82% Kapasitas" (82% Capacity).  
+  - Product 2: "Galon Mineral 19L (Kosong)" (Empty Mineral 19L Gallon), "ID: GLN-MNR-19-E", "520" (quantity), "Pcs" (pieces), "45% Kapasitas" (45% Capacity).  
+  - Product 3: "Galon Isi Ulang" (Refillable Gallon), "ID: GLN-PRM-12-F", "580" (quantity), "Pcs" (pieces), "58% Kapasitas" (58% Capacity).  
+- **Buttons**: "Update" (Update), "3pdate" (Update, likely a typo).  
+
+
+### 4. UI Components  
+- **Sidebar**:  
+  - Brand Logo: "Aqua Water" text with a water droplet icon (blue).  
+  - Menu Items: Icons + text (e.g., home icon for "Beranda", cart icon for "Pesan", truck icon for "Kurir", box icon for "Manajemen Stok").  
+  - Active State: "Manajemen Stok" is highlighted with a blue background and white text.  
+- **Header**:  
+  - Title/Subtitle: Left-aligned.  
+  - Search Bar: Rounded rectangle with a magnifying glass icon (left) and placeholder text.  
+  - User Profile: Circular avatar (dark blue) + name/role (right-aligned).  
+- **Summary Cards**:  
+  - Three cards in a row, each with an icon, title, value, and subtitle.  
+  - Icons: Clipboard (total stock), checkmark (filled), exclamation mark (empty).  
+- **Product List**:  
+  - Section Title: "Daftar Produk & Pengelolaan" with a list icon (left) and last update timestamp (right).  
+  - Product Rows: Each row has:  
+    - Product Image: Square thumbnail (e.g., blue water jug, gray empty jug, dark blue refillable jug).  
+    - Product Details: Name, ID, quantity, unit, capacity percentage.  
+    - Quantity Controls: Minus (-) button, input field (value "0"), plus (+) button.  
+    - Action Button: "Update" (blue) or "3pdate" (blue).  
+
+
+### 5. Spacing and Sizing  
+- **Sidebar**:  
+  - Width: ≈200px.  
+  - Padding: 20px (top/bottom), 15px (left/right).  
+  - Menu Item Height: 50px (vertical spacing between items: 10px).  
+- **Main Content**:  
+  - Header Padding: 20px (top/bottom), 30px (left/right).  
+  - Summary Cards: Horizontal spacing (20px between cards), vertical spacing (20px from header).  
+  - Card Padding: 20px (all sides).  
+  - Product List: Vertical spacing (20px between rows), padding (20px all sides).  
+- **Typography Sizes**:  
+  - Header Title: 24px (bold).  
+  - Header Subtitle: 14px (regular).  
+  - Summary Card Titles: 16px (regular).  
+  - Summary Card Values: 32px (bold).  
+  - Product List Section Title: 18px (bold).  
+  - Product Names: 16px (bold).  
+  - Product IDs/Quantities: 14px (regular).  
+  - Quantity Controls: 16px (buttons), 14px (input field).  
+  - Action Buttons: 14px (regular).  
+
+
+### 6. Typography  
+- **Font Family**: Sans-serif (e.g., Arial, Helvetica, or system font).  
+- **Weights**:  
+  - Bold: Used for headings (header title, summary card values, product names).  
+  - Regular: Used for subtitles, labels, and body text.  
+- **Line Height**: 1.5 (consistent for readability).  
+
+
+### 7. Visual Effects  
+- **Shadows**: Subtle box shadows on summary cards and product list rows (e.g., `0 2px 4px rgba(0,0,0,0.1)`).  
+- **Borders**: Rounded corners on all cards (8px radius) and the search bar (12px radius).  
+- **Gradients**: None (flat design).  
+- **Hover Effects**: Likely subtle (e.g., button background darkens on hover, though not visible in the static image).  
+
+
+### 8. Icon Descriptions  
+- **Sidebar Icons**:  
+  - Home: Grid of squares (for "Beranda").  
+  - Order: Shopping cart (for "Pesan").  
+  - Courier: Delivery truck (for "Kurir").  
+  - Stock: Box with a checkmark (for "Manajemen Stok").  
+- **Summary Card Icons**:  
+  - Total Stock: Blue clipboard with a checkmark.  
+  - Galon Isi: Green circular checkmark.  
+  - Galon Kosong: Red circular exclamation mark.  
+- **Product List Icon**: List with a pencil (for "Daftar Produk & Pengelolaan").  
+- **Search Bar Icon**: Magnifying glass (left of the input field).  
+- **Quantity Controls**: Minus (-) and plus (+) signs (circular buttons).  
+- **Action Buttons**: No icons (text-only).  
+
+
+This design prioritizes clarity and real-time stock monitoring, with a clean, modern aesthetic and intuitive navigation. The use of color coding (green for available, red for empty) and progress bars helps users quickly assess stock levels.
+
+========== riwayat.json ==========
+### 1. Overall Layout and Structure  
+The UI is a **mobile app screen** (likely for a logistics/delivery tracking app) with a vertical, scrollable layout. It features a top navigation bar, a statistics section, a "Recent Activities" list, and a bottom navigation bar. The design is clean, minimalistic, and uses a blue-and-white color scheme with green accents for status indicators.  
+
+
+### 2. Colors Used (Hex Codes)  
+- **Background**: `#F8FAFC` (light grayish-white, soft and neutral)  
+- **Primary Blue (Buttons/Stats Cards)**: `#2563EB` (vibrant blue for emphasis)  
+- **Secondary Blue (Text/Icons)**: `#1E40AF` (darker blue for text/secondary elements)  
+- **Green (Status Tags)**: `#10B981` (bright green for "Selesai" badges)  
+- **Gray (Text/Icons)**: `#6B7280` (medium gray for secondary text)  
+- **Light Gray (Borders/Dividers)**: `#E5E7EB` (subtle gray for card borders)  
+
+
+### 3. Text Content (Original Language: Indonesian)  
+- **Top Navigation**: "Riwayat Pengiriman" (Delivery History)  
+- **Stats Section**:  
+  - "Total Selesai" (Total Completed)  
+  - "Bulan Ini" (This Month)  
+- **List Section**: "Aktivitas Terbaru" (Recent Activities)  
+- **List Items**:  
+  - `#AQ-29381` (Tracking ID)  
+  - "Budi Setiawan" (Sender Name)  
+  - "14:20 WIB" (Time)  
+  - `#AQ-29379` (Tracking ID)  
+  - "Siti Aminah" (Sender Name)  
+  - "12:45 WIB" (Time)  
+  - `#AQ-29375` (Tracking ID)  
+  - "Andi Pratama" (Sender Name)  
+  - "10:15 WIB" (Time)  
+  - `#AQ-29368` (Tracking ID)  
+  - "Eko Wijaya" (Sender Name)  
+  - "Kemarin, 16:30" (Yesterday, 16:30)  
+- **Bottom Navigation**:  
+  - "Tugas" (Tasks)  
+  - "Dalam Perjalanan" (In Transit)  
+  - "Riwayat" (History)  
+
+
+### 4. UI Components  
+- **Top Navigation Bar**:  
+  - Left: Back arrow icon (chevron-left)  
+  - Center: Title "Riwayat Pengiriman"  
+- **Statistics Cards**:  
+  - Left: Rounded rectangle with "Total Selesai" (top) and "124" (large number, bottom)  
+  - Right: Rounded rectangle with "Bulan Ini" (top) and "28" (large number, bottom)  
+- **List Section**:  
+  - Header: "Aktivitas Terbaru"  
+  - List Items: 4 cards (each with a tracking ID, sender name, time, and a green "Selesai" tag)  
+- **Bottom Navigation Bar**:  
+  - Three buttons: "Tugas" (left, icon + text), "Dalam Perjalanan" (center, icon + text), "Riwayat" (right, icon + text, highlighted in blue)  
+
+
+### 5. Spacing and Sizing  
+- **Padding/Margins**:  
+  - Screen: 16px padding on all sides (top, bottom, left, right)  
+  - Navigation Bar: 12px top/bottom padding, 16px left/right padding  
+  - Stats Section: 16px gap between the two cards; 24px gap between stats and list header  
+  - List Items: 12px vertical gap between cards; 16px left/right padding inside each card  
+  - Bottom Navigation: 12px top padding (above buttons); 16px gap between buttons  
+- **Component Sizes**:  
+  - Stats Cards: 120px height, 160px width (left card) / 120px width (right card)  
+  - List Items: 80px height, full width (100% of screen width)  
+  - Bottom Navigation Buttons: 48px height, 80px width (center) / 120px width (right)  
+
+
+### 6. Typography  
+- **Font Family**: Sans-serif (likely `Inter` or similar, clean and modern)  
+- **Top Navigation Title**:  
+  - Size: 20px  
+  - Weight: 600 (semi-bold)  
+  - Color: `#1E40AF`  
+- **Stats Section Text**:  
+  - "Total Selesai"/"Bulan Ini": 14px, 500 (medium)  
+  - "124"/"28": 32px, 700 (bold)  
+- **List Header**:  
+  - "Aktivitas Terbaru": 16px, 600 (semi-bold)  
+- **List Item Text**:  
+  - Tracking ID (`#AQ-29381`): 14px, 600 (semi-bold)  
+  - Sender Name ("Budi Setiawan"): 14px, 500 (medium)  
+  - Time ("14:20 WIB"): 12px, 400 (regular)  
+- **Bottom Navigation Text**:  
+  - "Tugas"/"Dalam Perjalanan"/"Riwayat": 12px, 500 (medium)  
+
+
+### 7. Visual Effects  
+- **Shadows**:  
+  - Stats Cards: Subtle drop shadow (`0 1px 3px rgba(0,0,0,0.1)`) for depth  
+  - List Items: Light shadow (`0 1px 2px rgba(0,0,0,0.05)`) to separate items  
+- **Borders**:  
+  - List Items: 1px solid `#E5E7EB` (light gray) border around each card  
+- **Gradients**: None (flat design)  
+- **Rounded Corners**:  
+  - Stats Cards: 12px radius  
+  - List Items: 8px radius  
+  - Bottom Navigation Buttons: 8px radius  
+
+
+### 8. Icon Descriptions  
+- **Top Navigation**: Left arrow (chevron-left) – 24px size, `#1E40AF` color  
+- **List Items**: Truck icon (delivery) – 24px size, `#10B981` color (inside a light green circle)  
+- **Bottom Navigation**:  
+  - "Tugas": Document/list icon – 20px size, `#6B7280` color (inactive)  
+  - "Dalam Perjalanan": Truck icon – 20px size, `#6B7280` color (inactive)  
+  - "Riwayat": Clock/history icon – 20px size, `#FFFFFF` color (active, white on blue background)  
+- **Status Tags**: "Selesai" (green badge) – 12px font, 500 weight, `#FFFFFF` text, 6px padding (left/right), 4px padding (top/bottom), 4px radius  
+
+
+### Additional Details  
+- **Consistency**: All components use the same font family and color palette for a cohesive look.  
+- **Hierarchy**: The large numbers ("124", "28") in the stats section draw attention, followed by the list of recent activities.  
+- **Accessibility**: High contrast between text and background (e.g., white text on blue buttons, black text on white cards) ensures readability.
+
+========== konfirmasi.json ==========
+### 1. Overall Layout and Structure  
+The UI is a **mobile app screen** (likely Android, given the back arrow and status bar) with a vertical, single-column layout. It follows a **success confirmation flow** for a water delivery service, structured into distinct sections:  
+
+- **Header**: Contains a back arrow, app name, and user avatar.  
+- **Success Banner**: A green-tinted section with a checkmark icon and confirmation text.  
+- **Order Summary Card**: A white card with order details (ID, customer, completion time).  
+- **Delivery Proof Section**: A card with an image and location label.  
+- **Action Buttons**: Two buttons (one primary, one secondary) for navigation.  
+- **Bottom Navigation Bar**: Three tabs (Tasks, In Transit, History) with an active "In Transit" tab.  
+
+
+### 2. Colors (Hex Codes)  
+- **Background**: `#FFFFFF` (white)  
+- **Header Text**: `#007BFF` (blue)  
+- **Success Banner Background**: `#E6F7EE` (light green)  
+- **Success Icon/Text**: `#10B981` (emerald green)  
+- **Order Summary Card Background**: `#FFFFFF` (white)  
+- **Order Summary Text**: `#000000` (black)  
+- **Order ID/Completion Time Text**: `#374151` (dark gray)  
+- **Primary Button Background**: `#007BFF` (blue)  
+- **Primary Button Text**: `#FFFFFF` (white)  
+- **Secondary Button Background**: `#F3F4F6` (light gray)  
+- **Secondary Button Text**: `#374151` (dark gray)  
+- **Bottom Navigation Active Tab Background**: `#007BFF` (blue)  
+- **Bottom Navigation Inactive Tabs Background**: `#F3F4F6` (light gray)  
+- **Bottom Navigation Text (Active)**: `#FFFFFF` (white)  
+- **Bottom Navigation Text (Inactive)**: `#374151` (dark gray)  
+- **Delivery Proof Image Overlay**: `#000000` (black, 10% opacity)  
+- **Location Label Background**: `#000000` (black, 30% opacity)  
+- **Location Label Text**: `#FFFFFF` (white)  
+
+
+### 3. Text Content (Original Language: Indonesian)  
+- Header: "Kurir Water"  
+- Success Banner:  
+  - "Pengiriman Berhasil" (Delivery Successful)  
+  - "Pesan telah diterima oleh pelanggan" (Order received by customer)  
+- Order Summary Card:  
+  - "Ringkasan Pesanan" (Order Summary)  
+  - "Selesai" (Completed, green badge)  
+  - "ID Pesanan" (Order ID)  
+  - "#AQ-29381-WC" (Order ID value)  
+  - "Pelanggan" (Customer)  
+  - "Joko Subroto" (Customer name)  
+  - "Waktu Selesai" (Completion Time)  
+  - "14:30 WIB" (Time value)  
+- Delivery Proof Section:  
+  - "Bukti Pengiriman" (Delivery Proof)  
+  - "Teras depan (Sesuai Instruksi)" (Front porch (As per instructions))  
+- Action Buttons:  
+  - "Kembali ke Beranda" (Return to Home)  
+  - "Lihat Riwayat" (View History)  
+- Bottom Navigation:  
+  - "Tugas" (Tasks)  
+  - "Dalam Perjalanan" (In Transit)  
+  - "Riwayat" (History)  
+
+
+### 4. UI Components  
+- **Header**:  
+  - Left: Back arrow icon (chevron-left)  
+  - Center: "Kurir Water" text  
+  - Right: Circular user avatar (profile photo)  
+- **Success Banner**:  
+  - Circular green checkmark icon (centered)  
+  - Two lines of text (centered)  
+- **Order Summary Card**:  
+  - Rounded rectangle with a "Selesai" (Completed) badge (top-right)  
+  - Three key-value pairs (ID, Customer, Time) with labels and values  
+- **Delivery Proof Section**:  
+  - Rounded rectangle with an image (water jug on a porch)  
+  - Location label (bottom-left of the image)  
+- **Action Buttons**:  
+  - Primary: "Kembali ke Beranda" (blue, rounded rectangle)  
+  - Secondary: "Lihat Riwayat" (light gray, rounded rectangle)  
+- **Bottom Navigation Bar**:  
+  - Three tabs (Tasks, In Transit, History) with icons and text  
+  - "Dalam Perjalanan" (In Transit) is active (blue background, white text)  
+
+
+### 5. Spacing and Sizing  
+- **Padding**: 16px (all sides of the screen)  
+- **Header**: 12px top/bottom padding, 16px left/right  
+- **Success Banner**: 24px top/bottom padding, 16px left/right  
+- **Order Summary Card**: 16px padding, 12px bottom margin  
+- **Delivery Proof Section**: 16px padding, 12px bottom margin  
+- **Action Buttons**: 12px vertical padding, 16px horizontal padding, 8px bottom margin  
+- **Bottom Navigation**: 8px top padding, 16px bottom padding, 16px horizontal padding  
+- **Icons**: 24px (header back arrow, bottom navigation icons)  
+- **Checkmark Icon**: 32px (success banner)  
+- **Text Sizes**:  
+  - Header: 18px (bold)  
+  - Success Banner: 20px (bold), 14px (regular)  
+  - Order Summary Title: 16px (bold)  
+  - Order Summary Labels: 14px (regular)  
+  - Order Summary Values: 14px (bold)  
+  - Delivery Proof Title: 16px (bold)  
+  - Location Label: 12px (regular)  
+  - Action Buttons: 14px (bold)  
+  - Bottom Navigation Text: 12px (regular)  
+
+
+### 6. Typography  
+- **Font Family**: Sans-serif (likely Roboto or similar)  
+- **Weights**:  
+  - Bold: Header, Success Banner title, Order Summary title/values, Action Buttons, Bottom Navigation active tab  
+  - Regular: Success Banner subtitle, Order Summary labels, Location label, Bottom Navigation inactive tabs  
+- **Sizes**:  
+  - Header: 18px  
+  - Success Banner title: 20px  
+  - Success Banner subtitle: 14px  
+  - Order Summary title: 16px  
+  - Order Summary labels/values: 14px  
+  - Delivery Proof title: 16px  
+  - Location label: 12px  
+  - Action Buttons: 14px  
+  - Bottom Navigation text: 12px  
+
+
+### 7. Visual Effects  
+- **Shadows**: Subtle shadow on the Order Summary Card and Delivery Proof Section (e.g., `0 2px 4px rgba(0,0,0,0.1)`)  
+- **Borders**: Rounded corners (8px) on all cards and buttons  
+- **Gradients**: None  
+- **Overlays**: Semi-transparent black overlay (10%) on the Delivery Proof image; semi-transparent black background (30%) on the location label  
+
+
+### 8. Icon Descriptions  
+- **Header Back Arrow**: Left-pointing chevron (white on blue background)  
+- **Success Checkmark**: Circular green icon with a white checkmark (centered in the banner)  
+- **Bottom Navigation Icons**:  
+  - "Tugas" (Tasks): Document/clipboard icon (white on blue)  
+  - "Dalam Perjalanan" (In Transit): Truck icon (white on blue)  
+  - "Riwayat" (History): Clock icon (dark gray on light gray)  
+- **Action Button Icons**:  
+  - "Kembali ke Beranda": Home icon (white on blue)  
+  - "Lihat Riwayat": Clock icon (dark gray on light gray)  
+- **Location Label Icon**: Map pin icon (white on black background)  
+
+
+This design prioritizes clarity and user feedback, using a clean, modern aesthetic with high contrast for readability. The success state is emphasized with green tones, while the bottom navigation provides quick access to related tasks.
+
+========== tampilan_tugas.json ==========
+### 1. Overall Layout and Structure  
+The UI is a **mobile app screen** (likely for a delivery service) with a vertical, single-column layout. It features a top navigation bar, a map section, action buttons, an order details card, and a bottom navigation bar. The design is clean and functional, prioritizing key information (delivery status, order details, contact options) in a scannable format.  
+
+
+### 2. Colors Used (Hex Codes)  
+- **Primary Blue (brand color):** `#007AFF` (used for buttons, icons, and the "8 MENIT LAGI" badge)  
+- **Light Blue (background):** `#E3F2FD` (map section background)  
+- **White (card background):** `#FFFFFF` (order details card, bottom navigation buttons)  
+- **Light Green (WhatsApp button):** `#E8F5E9` (background)  
+- **Dark Green (WhatsApp text):** `#2E7D32` (text color)  
+- **Light Blue (status tag):** `#E3F2FD` (background) with dark blue text `#1565C0`  
+- **Gray (subtext):** `#757575` (for secondary labels like "Isi Ulang Tersegel & Higienis")  
+- **Black (primary text):** `#212121` (for headings, labels, and main content)  
+- **Light Gray (divider):** `#BDBDBD` (thin line below the map section)  
+
+
+### 3. Text Content (Original Language: Indonesian)  
+- Top navigation: *"Kurir Water"* (Courier Water)  
+- Map section: *"MENUJU KE"* (Heading to), *"122 Blue W"* (truncated address)  
+- Badge: *"8 MENIT LAGI"* (8 minutes left)  
+- Action buttons: *"Telepon Pelanggan"* (Call Customer), *"WhatsApp"*  
+- Order details heading: *"Rincian Pesanan"* (Order Details)  
+- Status tag: *"DALAM PENGIRIMAN"* (In Delivery)  
+- Product: *"3x 20L Purified Water"*  
+- Subtext: *"Isi Ulang Tersegel & Higienis"* (Sealed & Hygienic Refill)  
+- Order ID: *"ID Pesanan"* (Order ID), *"#AQ-29381-WC"*  
+- Customer: *"Pelanggan"* (Customer), *"Sarah Jenkins"*  
+- Special Instructions: *"Instruksi Khusus"* (Special Instructions), *"Titipkan di teras depan"* (Leave at front porch)  
+- Confirmation button: *"Konfirmasi Selesai & Unggah Foto"* (Confirm Complete & Upload Photo)  
+- Bottom navigation: *"Tugas"* (Tasks), *"Dalam Perjalanan"* (In Transit), *"Riwayat"* (History)  
+
+
+### 4. UI Components  
+- **Top Navigation Bar:**  
+  - Left: Blue water drop icon + "Kurir Water" text.  
+  - Right: Circular profile picture (user avatar).  
+
+- **Map Section:**  
+  - Background: Light blue (`#E3F2FD`) with a faint map graphic (roads, green areas).  
+  - Address card: White rounded rectangle with blue location icon, "MENUJU KE" text, and truncated address.  
+  - Blue badge: Rounded rectangle with white "8" and "MENIT LAGI" text.  
+
+- **Action Buttons (Row):**  
+  - Left: "Telepon Pelanggan" button (white background, blue phone icon, blue text).  
+  - Right: "WhatsApp" button (light green background, green chat icon, dark green text).  
+
+- **Order Details Card:**  
+  - White rounded rectangle with:  
+    - Heading: "Rincian Pesanan" (black, bold).  
+    - Status tag: Light blue rounded rectangle with dark blue text.  
+    - Product card: White rounded rectangle with blue water drop icon, product name, and subtext.  
+    - Order details: Labels (gray) and values (black) for ID, customer, and instructions.  
+    - Confirmation button: Blue rounded rectangle with white camera icon and text.  
+
+- **Bottom Navigation Bar:**  
+  - Three buttons:  
+    - Left: "Tugas" (white background, black icon/text).  
+    - Middle: "Dalam Perjalanan" (blue background, white icon/text).  
+    - Right: "Riwayat" (white background, black icon/text).  
+
+
+### 5. Spacing and Sizing  
+- **Padding/Margins:**  
+  - Overall screen: 16px horizontal padding, 24px vertical padding.  
+  - Map section: 16px padding, 12px bottom margin.  
+  - Action buttons: 12px padding, 8px gap between them.  
+  - Order details card: 16px padding, 12px bottom margin.  
+  - Bottom navigation: 16px padding, 8px gap between buttons.  
+
+- **Component Sizes:**  
+  - Top navigation bar: 56px height.  
+  - Map section: 120px height.  
+  - Action buttons: 48px height, 120px width (each).  
+  - Order details card: 280px height (approximate).  
+  - Confirmation button: 48px height, full width (minus padding).  
+  - Bottom navigation buttons: 48px height, 80px width (each).  
+
+
+### 6. Typography  
+- **Font Family:** Sans-serif (likely *Roboto* or similar, common in mobile UIs).  
+- **Top Navigation:**  
+  - "Kurir Water": 18px, bold, black.  
+- **Map Section:**  
+  - "MENUJU KE": 14px, regular, gray.  
+  - "122 Blue W": 16px, bold, black.  
+  - "8 MENIT LAGI": 24px (badge), bold, white.  
+- **Action Buttons:**  
+  - "Telepon Pelanggan": 14px, bold, blue.  
+  - "WhatsApp": 14px, bold, dark green.  
+- **Order Details:**  
+  - "Rincian Pesanan": 20px, bold, black.  
+  - "DALAM PENGIRIMAN": 12px, regular, dark blue.  
+  - Product name: 16px, bold, black.  
+  - Subtext: 12px, regular, gray.  
+  - Labels (ID, Customer, Instructions): 14px, regular, gray.  
+  - Values: 14px, regular, black.  
+  - Confirmation button: 14px, bold, white.  
+- **Bottom Navigation:**  
+  - "Tugas"/"Riwayat": 12px, regular, black.  
+  - "Dalam Perjalanan": 12px, regular, white.  
+
+
+### 7. Visual Effects  
+- **Shadows:** Subtle shadow (`0 2px 4px rgba(0,0,0,0.1)`) on the order details card and confirmation button for depth.  
+- **Borders:** Rounded corners (8px) on all cards, buttons, and the map section.  
+- **Gradients:** None (flat design).  
+- **Dividers:** Thin gray line (`#BDBDBD`) below the map section to separate sections.  
+
+
+### 8. Icon Descriptions  
+- **Top Navigation:** Blue water drop icon (simple, rounded shape).  
+- **Map Section:** Blue location pin icon (square with a triangle, standard map marker).  
+- **Action Buttons:**  
+  - "Telepon Pelanggan": Blue phone icon (classic handset shape).  
+  - "WhatsApp": Green chat bubble icon (rectangle with a tail).  
+- **Order Details:** Blue water drop icon (same as top navigation, smaller).  
+- **Confirmation Button:** White camera icon (classic photo camera shape).  
+- **Bottom Navigation:**  
+  - "Tugas": Black clipboard icon (rectangle with lines).  
+  - "Dalam Perjalanan": White truck icon (delivery vehicle).  
+  - "Riwayat": Black clock icon (circular with hands).  
+
+
+This design balances clarity and functionality, using color and spacing to guide the user’s attention to critical information (delivery time, order status, action buttons) while maintaining a clean, modern aesthetic.
+
+========== daftar_tugas.json ==========
+### 1. Overall Layout and Structure  
+The UI is a **mobile app screen** (likely for a water delivery service) with a vertical, scrollable layout. It follows a clean, card-based structure with a header, main content area, and bottom navigation bar. The design prioritizes clarity and task prioritization, with a focus on actionable delivery tasks.  
+
+
+### 2. Colors Used (Hex Codes)  
+- **Primary Blue**: `#0066CC` (used for buttons, icons, and accents)  
+- **Light Blue (Background)**: `#F0F8FF` (subtle background for the header and cards)  
+- **White**: `#FFFFFF` (card backgrounds, text)  
+- **Orange (Status Label)**: `#FFA500` (used for "DITUGASKAN" badges)  
+- **Gray (Secondary Text)**: `#666666` (descriptive text, icons)  
+- **Light Gray (Info Box)**: `#E6F2FF` (background for the optimization tip)  
+- **Dark Gray (Navigation Icons)**: `#333333` (inactive navigation icons)  
+
+
+### 3. Text Content (Original Language)  
+- **Header**:  
+  - `Kurir Water` (app name, top-left)  
+  - `Tugas Pengiriman Hari Ini` (main title, below header)  
+  - `Anda memiliki 4 tugas menunggu penjemputan.` (subheading, below main title)  
+
+- **Task Cards**:  
+  - `DITUGASKAN` (orange status label, top of each card)  
+  - `Ahmad Faisal` (recipient name, first card)  
+  - `Jl.Jogokarian, samping masjid, gang no 3` (address, first card)  
+  - `5x Isi Ulang Galon 19L` (order details, first card)  
+  - `Siti Rahma` (recipient name, second card)  
+  - `Sewon Rt3 Rw1 Bantul` (address, second card)  
+  - `10x Isi Ulang Galon 19L, 2x Pompa` (order details, second card)  
+  - `Budi Santoso` (recipient name, third card)  
+  - `Jl. Merpati No. 45, Banguntapan Bantul` (address, third card)  
+  - `3x Isi Ulang Galon 19L` (order details, third card)  
+
+- **Buttons**:  
+  - `Mulai Pengiriman` (action button text, on all cards)  
+
+- **Optimization Tip**:  
+  - `Saran Optimalisasi:` (label, left of tip)  
+  - `Hemat 12 menit dengan rute bersamaan.` (tip text, right of label)  
+
+- **Bottom Navigation**:  
+  - `Tugas` (active tab, bottom-left)  
+  - `Dalam Perjalanan` (middle tab)  
+  - `Riwayat` (right tab)  
+
+
+### 4. UI Components  
+- **Header**:  
+  - App logo: Blue water droplet icon + `Kurir Water` text (left-aligned).  
+  - User avatar: Circular profile picture (right-aligned, top-right corner).  
+
+- **Main Content**:  
+  - **Title Section**: `Tugas Pengiriman Hari Ini` (bold, large font) + subheading (smaller, gray).  
+  - **Task Cards**: Three rectangular cards (white background, rounded corners) with:  
+    - Orange "DITUGASKAN" badge (top-left, bold, uppercase).  
+    - Recipient name (bold, black).  
+    - Address (gray, smaller font, with location icon).  
+    - Order details (gray, smaller font, with checkbox icon).  
+    - Blue "Mulai Pengiriman" button (full-width, rounded, with right arrow icon).  
+  - **Optimization Tip Box**: Dashed border (light blue background, rounded corners) with info icon + text.  
+
+- **Bottom Navigation Bar**:  
+  - Three tabs: `Tugas` (active, blue background, white text, icon), `Dalam Perjalanan` (gray text, icon), `Riwayat` (gray text, icon).  
+
+
+### 5. Spacing and Sizing  
+- **Padding/Margins**:  
+  - Header: 16px horizontal padding, 12px vertical padding.  
+  - Main content: 16px horizontal padding, 20px vertical padding between sections.  
+  - Cards: 16px horizontal padding, 12px vertical padding.  
+  - Buttons: 12px vertical padding, 16px horizontal padding.  
+  - Bottom navigation: 8px vertical padding, 16px horizontal padding.  
+
+- **Sizing**:  
+  - Header height: ~60px.  
+  - Card height: ~180px (each).  
+  - Button height: ~44px.  
+  - Bottom navigation height: ~60px.  
+
+
+### 6. Typography  
+- **Font Family**: Sans-serif (e.g., Roboto, Arial).  
+- **Header Text**:  
+  - `Kurir Water`: 18px, bold, `#0066CC`.  
+  - `Tugas Pengiriman Hari Ini`: 24px, bold, `#000000`.  
+  - Subheading: 14px, regular, `#666666`.  
+- **Task Cards**:  
+  - `DITUGASKAN`: 12px, bold, `#FFA500`.  
+  - Recipient name: 16px, bold, `#000000`.  
+  - Address/Order details: 14px, regular, `#666666`.  
+  - Button text: 14px, bold, `#FFFFFF`.  
+- **Optimization Tip**:  
+  - Label: 14px, regular, `#0066CC`.  
+  - Tip text: 14px, regular, `#666666`.  
+- **Bottom Navigation**:  
+  - Tab text: 12px, regular, `#FFFFFF` (active) / `#333333` (inactive).  
+
+
+### 7. Visual Effects  
+- **Shadows**: Subtle drop shadow on cards (`0 2px 4px rgba(0,0,0,0.1)`).  
+- **Borders**: Dashed border (1px, `#0066CC`) on the optimization tip box.  
+- **Gradients**: None (flat design).  
+- **Rounded Corners**: 8px on cards, 4px on buttons, 50% on avatar.  
+
+
+### 8. Icon Descriptions  
+- **Header**: Blue water droplet (left) + circular user avatar (right, profile picture).  
+- **Task Cards**:  
+  - Location icon (gray, left of address).  
+  - Checkbox icon (gray, left of order details).  
+  - Right arrow icon (white, inside "Mulai Pengiriman" button).  
+  - Building icon (blue, top-right of second card).  
+  - Home icon (blue, top-right of third card).  
+- **Optimization Tip**: Blue info icon (left of label).  
+- **Bottom Navigation**:  
+  - `Tugas`: Document icon (white, active).  
+  - `Dalam Perjalanan`: Truck icon (gray, inactive).  
+  - `Riwayat`: Clock icon (gray, inactive).  
+
+
+This design emphasizes usability for delivery drivers, with clear task prioritization, actionable buttons, and intuitive navigation. The color scheme and typography ensure readability, while visual hierarchy guides the user’s attention to critical information (e.g., task status, action buttons).

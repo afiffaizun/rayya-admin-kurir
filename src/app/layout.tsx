@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AquaWater — Manajemen Pengiriman Galon",
+  title: "Manajemen Rayya Water",
   description:
     "Aplikasi manajemen pengiriman galon air untuk Admin & Kurir. Pengantaran cepat & higienis.",
-  keywords: ["AquaWater", "Kurir Water", "galon", "pengiriman", "admin", "kurir"],
-  authors: [{ name: "AquaWater" }],
+  keywords: ["RayyaWater", "Rayya Water", "galon", "pengiriman", "admin", "kurir"],
+  authors: [{ name: "RayyaWater" }],
 };
 
 export default function RootLayout({

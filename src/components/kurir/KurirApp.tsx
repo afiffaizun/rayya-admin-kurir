@@ -39,7 +39,7 @@ export default function KurirApp() {
               >
                 <Droplets className="h-4 w-4" />
               </span>
-              <span className="text-base font-bold text-slate-900">Kurir Water</span>
+              <span className="text-base font-bold text-slate-900">Rayya Kurir</span>
             </div>
             <div className="flex items-center gap-2">
               <span

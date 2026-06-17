@@ -46,7 +46,7 @@ export default function LoginScreen() {
           >
             <Logo size={72} />
             <h1 className="mt-5 text-3xl font-bold tracking-tight text-slate-900">
-              Aqua<span style={{ color: BRAND.blue }}>Water</span>
+              Rayya<span style={{ color: BRAND.blue }}>Water</span>
             </h1>
             <p className="mt-2 text-center text-sm text-slate-500">
               Pengantaran Cepat &amp; Higienis
@@ -137,7 +137,7 @@ export default function LoginScreen() {
                     className="mt-4 text-3xl font-bold"
                     style={{ color: BRAND.blue }}
                   >
-                    Kurir Water
+                    Rayya Kurir
                   </h1>
                   <p className="mt-1 text-sm text-slate-700">
                     Pengantaran Cepat &amp; Higienis

@@ -45,7 +45,7 @@ export default function AdminShell() {
             <Droplets className="h-5 w-5" />
           </span>
           <span className="text-lg font-bold text-slate-900">
-            Aqua<span style={{ color: BRAND.blue }}>Water</span>
+            Rayya<span style={{ color: BRAND.blue }}>Water</span>
           </span>
         </div>
 
@@ -91,7 +91,7 @@ export default function AdminShell() {
             >
               <Droplets className="h-4 w-4" />
             </span>
-            <span className="font-bold text-slate-900">AquaWater</span>
+            <span className="font-bold text-slate-900">RayyaWater</span>
           </div>
 
           {/* search */}

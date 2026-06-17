@@ -33,7 +33,7 @@ export default function KonfirmasiSelesai() {
         >
           <ArrowLeft className="h-5 w-5" />
         </button>
-        <span className="text-base font-bold text-slate-900">Kurir Water</span>
+        <span className="text-base font-bold text-slate-900">Rayya Kurir</span>
         <span
           className="grid h-9 w-9 place-items-center rounded-full text-xs font-bold text-white"
           style={{ background: "#1E88E5" }}

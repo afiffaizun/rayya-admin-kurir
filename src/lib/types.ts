@@ -2,7 +2,7 @@
 
 export type Role = "none" | "admin" | "kurir"
 
-export type AdminView = "beranda" | "pesanan" | "kurir" | "stok"
+export type AdminView = "beranda" | "pesanan" | "kurir" | "stok" | "pelanggan"
 export type KurirView = "tugas" | "perjalanan" | "riwayat" | "detail" | "konfirmasi"
 
 export type OrderStatus = "Diproses" | "Dalam Pengiriman" | "Selesai" | "Ditolak"
@@ -50,6 +50,16 @@ export interface KurirTask {
   status: TaskStatus
   buildingType?: "rumah" | "gedung"
   orderItems: { qty: number; name: string }[]
+}
+
+export interface Customer {
+  id: string
+  name: string
+  phone: string
+  email: string
+  address: string
+  customerType: "Regular Client" | "New Customer" | "VIP Member"
+  totalOrders: number
 }
 
 export interface HistoryItem {

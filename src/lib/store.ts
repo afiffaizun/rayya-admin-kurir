@@ -8,6 +8,7 @@ import type {
   StockItem,
   KurirTask,
   HistoryItem,
+  Customer,
 } from "./types"
 
 // ---- Brand colors used across the app ----
@@ -217,6 +218,54 @@ const HISTORY: HistoryItem[] = [
   },
 ]
 
+const CUSTOMERS: Customer[] = [
+  {
+    id: "CUST-001",
+    name: "Budi Santoso",
+    phone: "081234567890",
+    email: "budi.santoso@gmail.com",
+    address: "Jl. Sudirman No. 123, Jakarta Selatan",
+    customerType: "Regular Client",
+    totalOrders: 45,
+  },
+  {
+    id: "CUST-002",
+    name: "Siti Rahayu",
+    phone: "085678901234",
+    email: "siti.rahayu@gmail.com",
+    address: "Jl. Thamrin No. 45, Jakarta Pusat",
+    customerType: "VIP Member",
+    totalOrders: 120,
+  },
+  {
+    id: "CUST-003",
+    name: "Ahmad Hidayat",
+    phone: "087890123456",
+    email: "ahmad.hidayat@gmail.com",
+    address: "Jl. Gatot Subroto No. 67, Jakarta Barat",
+    customerType: "Regular Client",
+    totalOrders: 32,
+  },
+  {
+    id: "CUST-004",
+    name: "Dewi Lestari",
+    phone: "082345678901",
+    email: "dewi.lestari@gmail.com",
+    address: "Jl. Rasuna Said No. 89, Jakarta Selatan",
+    customerType: "New Customer",
+    totalOrders: 5,
+  },
+  {
+    id: "CUST-005",
+    name: "Rudi Hermawan",
+    phone: "083456789012",
+    email: "rudi.hermawan@gmail.com",
+    address: "Jl. Kuningan No. 101, Jakarta Selatan",
+    customerType: "Regular Client",
+    totalOrders: 28,
+  },
+]
+
 // ---- Store ----
 interface AppState {
   role: Role
@@ -231,6 +280,7 @@ interface AppState {
   stock: StockItem[]
   tasks: KurirTask[]
   history: HistoryItem[]
+  customers: Customer[]
   orderTab: "Semua" | "Aktif" | "Selesai"
 
   // admin user
@@ -253,6 +303,9 @@ interface AppState {
   updateCourier: (id: string, data: Partial<Courier>) => void
   deleteCourier: (id: string) => void
   addOrder: (data: Omit<AdminOrder, "id">) => void
+  addCustomer: (data: Omit<Customer, "id">) => void
+  updateCustomer: (id: string, data: Partial<Customer>) => void
+  deleteCustomer: (id: string) => void
 }
 
 export const useAppStore = create<AppState>((set) => ({
@@ -267,6 +320,7 @@ export const useAppStore = create<AppState>((set) => ({
   stock: STOCK_ITEMS,
   tasks: KURIR_TASKS,
   history: HISTORY,
+  customers: CUSTOMERS,
   orderTab: "Semua",
 
   adminName: "Felix Admin",
@@ -376,4 +430,18 @@ export const useAppStore = create<AppState>((set) => ({
       const id = `#ORD-${num}`
       return { orders: [{ ...data, id }, ...s.orders] }
     }),
+  addCustomer: (data) =>
+    set((s) => {
+      const num = s.customers.length + 1
+      const id = `CUST-${String(num).padStart(3, "0")}`
+      return { customers: [...s.customers, { ...data, id }] }
+    }),
+  updateCustomer: (id, data) =>
+    set((s) => ({
+      customers: s.customers.map((c) => (c.id === id ? { ...c, ...data } : c)),
+    })),
+  deleteCustomer: (id) =>
+    set((s) => ({
+      customers: s.customers.filter((c) => c.id !== id),
+    })),
 }))

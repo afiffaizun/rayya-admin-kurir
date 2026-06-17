@@ -12,6 +12,7 @@ import {
   HelpCircle,
   LogOut,
   ChevronDown,
+  UserPlus,
 } from "lucide-react"
 import { useAppStore, BRAND } from "@/lib/store"
 import type { AdminView } from "@/lib/types"
@@ -19,11 +20,13 @@ import BerandaAdmin from "./BerandaAdmin"
 import ManajemenKurir from "./ManajemenKurir"
 import ManajemenGalon from "./ManajemenGalon"
 import PesananAdmin from "./PesananAdmin"
+import DataPelanggan from "./DataPelanggan"
 
 const NAV: { key: AdminView; label: string; icon: React.ReactNode }[] = [
   { key: "beranda", label: "Beranda", icon: <Home className="h-5 w-5" /> },
   { key: "pesanan", label: "Pesanan", icon: <ClipboardList className="h-5 w-5" /> },
   { key: "kurir", label: "Kurir", icon: <Truck className="h-5 w-5" /> },
+  { key: "pelanggan", label: "Pelanggan", icon: <UserPlus className="h-5 w-5" /> },
   { key: "stok", label: "Manajemen Stok", icon: <Boxes className="h-5 w-5" /> },
 ]
 
@@ -164,6 +167,7 @@ export default function AdminShell() {
               {adminView === "beranda" && <BerandaAdmin />}
               {adminView === "pesanan" && <PesananAdmin />}
               {adminView === "kurir" && <ManajemenKurir />}
+              {adminView === "pelanggan" && <DataPelanggan />}
               {adminView === "stok" && <ManajemenGalon />}
             </motion.div>
           </AnimatePresence>

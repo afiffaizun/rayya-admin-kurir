@@ -1,9 +1,11 @@
 "use client"
 
+import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Droplets, LogOut, ClipboardList, Truck, Clock } from "lucide-react"
 import { useAppStore, BRAND } from "@/lib/store"
 import { MobileFrame } from "./MobileFrame"
+import ProfilKurir from "./ProfilKurir"
 import DaftarTugas from "./DaftarTugas"
 import TampilanTugas from "./TampilanTugas"
 import KonfirmasiSelesai from "./KonfirmasiSelesai"
@@ -13,10 +15,11 @@ import DalamPerjalanan from "./DalamPerjalanan"
 export default function KurirApp() {
   const kurirView = useAppStore((s) => s.kurirView)
   const setKurirView = useAppStore((s) => s.setKurirView)
-  const kurirName = useAppStore((s) => s.kurirName)
+  const courier = useAppStore((s) => s.couriers.find((c) => c.id === s.kurirId))
   const logout = useAppStore((s) => s.logout)
 
-  // Detail & confirmation are full-screen overlays (no bottom nav)
+  const [showProfile, setShowProfile] = useState(false)
+
   const isOverlay = kurirView === "detail" || kurirView === "konfirmasi"
 
   const activeTab: "tugas" | "perjalanan" | "riwayat" =
@@ -26,10 +29,13 @@ export default function KurirApp() {
         ? "riwayat"
         : "tugas"
 
+  const initials = courier
+    ? courier.initials
+    : "AP"
+
   return (
     <div className="min-h-screen bg-slate-100 flex items-center justify-center p-4">
       <MobileFrame>
-        {/* Top bar (hidden on overlay detail/konfirmasi which have their own header) */}
         {!isOverlay && (
           <header className="flex items-center justify-between px-5 py-3.5">
             <div className="flex items-center gap-2">
@@ -42,16 +48,13 @@ export default function KurirApp() {
               <span className="text-base font-bold text-slate-900">Rayya Kurir</span>
             </div>
             <div className="flex items-center gap-2">
-              <span
-                className="grid h-9 w-9 place-items-center rounded-full text-xs font-bold text-white"
-                style={{ background: "#1E88E5" }}
+              <button
+                onClick={() => setShowProfile(true)}
+                className="grid h-9 w-9 place-items-center rounded-full text-xs font-bold text-white hover:ring-2 hover:ring-blue-200 transition-shadow"
+                style={{ background: courier?.avatarColor ?? "#1E88E5" }}
               >
-                {kurirName
-                  .split(" ")
-                  .map((w) => w[0])
-                  .join("")
-                  .slice(0, 2)}
-              </span>
+                {initials}
+              </button>
               <button
                 onClick={logout}
                 aria-label="Keluar"
@@ -63,7 +66,6 @@ export default function KurirApp() {
           </header>
         )}
 
-        {/* Content */}
         <div className="relative flex-1 overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div
@@ -83,7 +85,6 @@ export default function KurirApp() {
           </AnimatePresence>
         </div>
 
-        {/* Bottom nav (hidden on overlays) */}
         {!isOverlay && (
           <nav className="flex items-center gap-2 border-t border-slate-200 bg-white px-3 py-2.5">
             <BottomTab
@@ -107,6 +108,8 @@ export default function KurirApp() {
           </nav>
         )}
       </MobileFrame>
+
+      <ProfilKurir open={showProfile} onClose={() => setShowProfile(false)} />
     </div>
   )
 }

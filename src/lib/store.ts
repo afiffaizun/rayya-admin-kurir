@@ -286,6 +286,7 @@ interface AppState {
   // admin user
   adminName: string
   kurirName: string
+  kurirId: string
 
   // actions
   login: (role: Role) => void
@@ -325,6 +326,7 @@ export const useAppStore = create<AppState>((set) => ({
 
   adminName: "Felix Admin",
   kurirName: "Andi Pratama",
+  kurirId: "C-001",
 
   login: (role) => set({ role, kurirView: "tugas", adminView: "beranda" }),
   logout: () => set({ role: "none", activeTaskId: null }),

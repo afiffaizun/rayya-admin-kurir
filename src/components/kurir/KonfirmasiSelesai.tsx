@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import { motion } from "framer-motion"
 import {
   ArrowLeft,
@@ -9,6 +10,7 @@ import {
   MapPin,
 } from "lucide-react"
 import { useAppStore, BRAND } from "@/lib/store"
+import ProfilKurir from "./ProfilKurir"
 
 export default function KonfirmasiSelesai() {
   const tasks = useAppStore((s) => s.tasks)
@@ -16,10 +18,11 @@ export default function KonfirmasiSelesai() {
   const history = useAppStore((s) => s.history)
   const setKurirView = useAppStore((s) => s.setKurirView)
   const kurirName = useAppStore((s) => s.kurirName)
+  const courier = useAppStore((s) => s.couriers.find((c) => c.id === s.kurirId))
 
-  // find the just-completed task from history (top item)
   const completed = history[0]
   const task = tasks.find((t) => t.id === activeTaskId)
+  const [showProfile, setShowProfile] = useState(false)
 
   return (
     <div className="flex h-full flex-col">
@@ -34,16 +37,13 @@ export default function KonfirmasiSelesai() {
           <ArrowLeft className="h-5 w-5" />
         </button>
         <span className="text-base font-bold text-slate-900">Rayya Kurir</span>
-        <span
-          className="grid h-9 w-9 place-items-center rounded-full text-xs font-bold text-white"
-          style={{ background: "#1E88E5" }}
+        <button
+          onClick={() => setShowProfile(true)}
+          className="grid h-9 w-9 place-items-center rounded-full text-xs font-bold text-white hover:ring-2 hover:ring-blue-200 transition-shadow"
+          style={{ background: courier?.avatarColor ?? "#1E88E5" }}
         >
-          {kurirName
-            .split(" ")
-            .map((w) => w[0])
-            .join("")
-            .slice(0, 2)}
-        </span>
+          {courier?.initials ?? kurirName.split(" ").map((w) => w[0]).join("").slice(0, 2)}
+        </button>
       </header>
 
       <div className="flex-1 overflow-y-auto px-5 pb-6">
@@ -124,6 +124,8 @@ export default function KonfirmasiSelesai() {
           </button>
         </div>
       </div>
+
+      <ProfilKurir open={showProfile} onClose={() => setShowProfile(false)} />
     </div>
   )
 }

@@ -13,6 +13,7 @@ import {
   ChevronRight,
 } from "lucide-react"
 import { useAppStore, BRAND } from "@/lib/store"
+import ProfilKurir from "./ProfilKurir"
 
 export default function TampilanTugas() {
   const tasks = useAppStore((s) => s.tasks)
@@ -21,9 +22,11 @@ export default function TampilanTugas() {
   const startTask = useAppStore((s) => s.startTask)
   const completeTask = useAppStore((s) => s.completeTask)
   const kurirName = useAppStore((s) => s.kurirName)
+  const courier = useAppStore((s) => s.couriers.find((c) => c.id === s.kurirId))
 
   const task = tasks.find((t) => t.id === activeTaskId) ?? tasks[0]
   const [photoUploaded, setPhotoUploaded] = useState(false)
+  const [showProfile, setShowProfile] = useState(false)
 
   const inTransit = task.status === "DALAM_PENGIRIMAN"
 
@@ -47,16 +50,13 @@ export default function TampilanTugas() {
           </button>
           <span className="text-base font-bold text-slate-900">Rayya Kurir</span>
         </div>
-        <span
-          className="grid h-9 w-9 place-items-center rounded-full text-xs font-bold text-white"
-          style={{ background: "#1E88E5" }}
+        <button
+          onClick={() => setShowProfile(true)}
+          className="grid h-9 w-9 place-items-center rounded-full text-xs font-bold text-white hover:ring-2 hover:ring-blue-200 transition-shadow"
+          style={{ background: courier?.avatarColor ?? "#1E88E5" }}
         >
-          {kurirName
-            .split(" ")
-            .map((w) => w[0])
-            .join("")
-            .slice(0, 2)}
-        </span>
+          {courier?.initials ?? kurirName.split(" ").map((w) => w[0]).join("").slice(0, 2)}
+        </button>
       </header>
 
       {/* Scrollable content */}
@@ -173,6 +173,8 @@ export default function TampilanTugas() {
           <ChevronRight className="h-3.5 w-3.5" />
         </div>
       </div>
+
+      <ProfilKurir open={showProfile} onClose={() => setShowProfile(false)} />
     </div>
   )
 }

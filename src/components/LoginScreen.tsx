@@ -245,7 +245,7 @@ function LoginForm({
       <Field
         label="Username"
         icon={<User className="h-5 w-5" />}
-        placeholder={isKurir ? "Contoh: K-123456" : "username"}
+        placeholder={isKurir ? "Contoh: admin" : "username"}
         value={username}
         onChange={setUsername}
       />
@@ -254,7 +254,7 @@ function LoginForm({
         <Field
           label="PIN / Kata Sandi"
           icon={<Lock className="h-5 w-5" />}
-          placeholder="Masukkan 6 digit PIN"
+          placeholder="Masukkan kata sandi"
           value={pin}
           onChange={setPin}
           type={show ? "text" : "password"}
@@ -276,7 +276,7 @@ function LoginForm({
             style={{ color: BRAND.blue }}
             onClick={() => {}}
           >
-            Lupa PIN?
+            Lupa Kata Sandi?
           </button>
         </div>
       </div>

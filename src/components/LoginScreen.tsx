@@ -14,6 +14,7 @@ import {
   Truck,
 } from "lucide-react"
 import { useAppStore, BRAND } from "@/lib/store"
+import { MobileFrame } from "@/components/kurir/MobileFrame"
 
 type LoginMode = "select" | "admin" | "kurir"
 
@@ -106,51 +107,52 @@ export default function LoginScreen() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -16 }}
             transition={{ duration: 0.35 }}
-            className="relative z-10 min-h-screen"
+            className="relative z-10 min-h-screen flex items-center justify-center p-4"
           >
-            {/* mobile-frame gradient background */}
-            <div
-              className="min-h-screen w-full"
-              style={{
-                background:
-                  "linear-gradient(to top, #E6F7FF 0%, #F5FBFF 45%, #FFFFFF 100%)",
-              }}
-            >
-              {/* top bar */}
-              <div className="flex items-center gap-3 px-5 py-4">
-                <button
-                  onClick={() => setMode("select")}
-                  className="grid h-9 w-9 place-items-center rounded-full text-slate-900 hover:bg-black/5"
-                  aria-label="Kembali"
-                >
-                  <ArrowLeft className="h-5 w-5" />
-                </button>
-                <span className="text-base font-semibold text-slate-900">
-                  Masuk Kurir
-                </span>
-              </div>
+            <MobileFrame>
+              <div
+                className="flex flex-col h-full"
+                style={{
+                  background:
+                    "linear-gradient(to top, #E6F7FF 0%, #F5FBFF 45%, #FFFFFF 100%)",
+                }}
+              >
+                {/* top bar */}
+                <div className="flex items-center gap-3 px-5 py-4">
+                  <button
+                    onClick={() => setMode("select")}
+                    className="grid h-9 w-9 place-items-center rounded-full text-slate-900 hover:bg-black/5"
+                    aria-label="Kembali"
+                  >
+                    <ArrowLeft className="h-5 w-5" />
+                  </button>
+                  <span className="text-base font-semibold text-slate-900">
+                    Masuk Kurir
+                  </span>
+                </div>
 
-              <div className="flex flex-col items-center px-6 pb-6 text-center">
-                <Logo size={72} />
-                <h1
-                  className="mt-4 text-3xl font-bold"
-                  style={{ color: BRAND.blue }}
-                >
-                  Kurir Water
-                </h1>
-                <p className="mt-1 text-sm text-slate-700">
-                  Pengantaran Cepat &amp; Higienis
-                </p>
-              </div>
+                <div className="flex flex-col items-center px-6 pb-6 text-center">
+                  <Logo size={72} />
+                  <h1
+                    className="mt-4 text-3xl font-bold"
+                    style={{ color: BRAND.blue }}
+                  >
+                    Kurir Water
+                  </h1>
+                  <p className="mt-1 text-sm text-slate-700">
+                    Pengantaran Cepat &amp; Higienis
+                  </p>
+                </div>
 
-              <div className="px-5 pb-10">
-                <LoginForm
-                  variant="kurir"
-                  onBack={() => setMode("select")}
-                  onSubmit={() => login("kurir")}
-                />
+                <div className="px-5 pb-10">
+                  <LoginForm
+                    variant="kurir"
+                    onBack={() => setMode("select")}
+                    onSubmit={() => login("kurir")}
+                  />
+                </div>
               </div>
-            </div>
+            </MobileFrame>
           </motion.div>
         )}
       </AnimatePresence>

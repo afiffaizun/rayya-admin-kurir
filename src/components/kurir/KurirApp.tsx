@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion"
 import { Droplets, LogOut, ClipboardList, Truck, Clock } from "lucide-react"
 import { useAppStore, BRAND } from "@/lib/store"
+import { MobileFrame } from "./MobileFrame"
 import DaftarTugas from "./DaftarTugas"
 import TampilanTugas from "./TampilanTugas"
 import KonfirmasiSelesai from "./KonfirmasiSelesai"
@@ -26,9 +27,8 @@ export default function KurirApp() {
         : "tugas"
 
   return (
-    <div className="min-h-screen bg-slate-100">
-      {/* Mobile frame: centered phone on desktop, full on mobile */}
-      <div className="mx-auto flex min-h-screen w-full max-w-[440px] flex-col bg-[#F8FAFC] shadow-xl md:my-4 md:min-h-[calc(100vh-2rem)] md:rounded-[2rem] md:overflow-hidden md:ring-1 md:ring-slate-200">
+    <div className="min-h-screen bg-slate-100 flex items-center justify-center p-4">
+      <MobileFrame>
         {/* Top bar (hidden on overlay detail/konfirmasi which have their own header) */}
         {!isOverlay && (
           <header className="flex items-center justify-between px-5 py-3.5">
@@ -106,7 +106,7 @@ export default function KurirApp() {
             />
           </nav>
         )}
-      </div>
+      </MobileFrame>
     </div>
   )
 }

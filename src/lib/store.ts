@@ -104,7 +104,7 @@ const ADMIN_ORDERS: AdminOrder[] = [
   {
     id: "#ORD-2408",
     customer: "Budi Santoso",
-    customerType: "VIP Member",
+    customerType: "Regular Client",
     location: "Bambanglipuro, kost indah Rt2",
     items: "10 Galon Mineral",
     total: "Rp 100.000",
@@ -234,7 +234,7 @@ const CUSTOMERS: Customer[] = [
     phone: "085678901234",
     email: "siti.rahayu@gmail.com",
     address: "Jl. Thamrin No. 45, Jakarta Pusat",
-    customerType: "VIP Member",
+    customerType: "Regular Client",
     totalOrders: 120,
   },
   {

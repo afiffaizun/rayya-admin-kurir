@@ -58,7 +58,7 @@ export interface Customer {
   phone: string
   email: string
   address: string
-  customerType: "Regular Client" | "New Customer" | "VIP Member"
+  customerType: "Regular Client" | "New Customer"
   totalOrders: number
 }
 

@@ -7,7 +7,7 @@ import { useAppStore, BRAND } from "@/lib/store"
 import type { OrderStatus } from "@/lib/types"
 import { StatusBadge } from "./BerandaAdmin"
 
-const CUSTOMER_TYPES = ["Regular Client", "New Customer", "VIP Member"]
+const CUSTOMER_TYPES = ["Regular Client", "New Customer"]
 const STATUS_OPTIONS: OrderStatus[] = ["Diproses", "Dalam Pengiriman", "Selesai", "Ditolak"]
 
 const EMPTY_FORM = {

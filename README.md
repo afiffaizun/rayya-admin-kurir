@@ -22,7 +22,7 @@ Aplikasi manajemen pengiriman galon air untuk **Admin** & **Kurir**. Pengantaran
 - **Beranda** — Dashboard ringkasan pesanan, kurir, dan stok
 - **Pesanan** — Daftar pesanan, pencarian, tambah pesanan baru
 - **Kurir** — CRUD kurir (tambah, edit, hapus), status & performa
-- **Pelanggan** — CRUD pelanggan, tipe pelanggan (Regular, VIP, New)
+- **Pelanggan** — CRUD pelanggan, tipe pelanggan (Regular, New)
 - **Manajemen Stok** — Pantau & update stok galon
 
 ### Kurir

@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion"
 import {
   Users,
   ShoppingCart,
-  Star,
   UserPlus,
   Phone,
   Filter,
@@ -43,7 +42,6 @@ export default function DataPelanggan() {
   const [search, setSearch] = useState("")
 
   const total = customers.length
-  const vip = customers.filter((c) => c.customerType === "VIP Member").length
   const newCust = customers.filter((c) => c.customerType === "New Customer").length
 
   const filtered = customers.filter(
@@ -98,19 +96,12 @@ export default function DataPelanggan() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <StatCard
           icon={<Users className="h-5 w-5" />}
           tint="#1E88E5"
           label="TOTAL PELANGGAN"
           value={total}
-        />
-        <StatCard
-          icon={<Star className="h-5 w-5" />}
-          tint="#FB8C00"
-          label="VIP MEMBER"
-          value={vip}
-          tintBg="#FFCCBC"
         />
         <StatCard
           icon={<UserPlus className="h-5 w-5" />}
@@ -230,7 +221,7 @@ export default function DataPelanggan() {
                     Tipe Pelanggan
                   </label>
                   <div className="flex gap-2">
-                    {(["Regular Client", "New Customer", "VIP Member"] as const).map((t) => (
+                    {(["Regular Client", "New Customer"] as const).map((t) => (
                       <button
                         key={t}
                         onClick={() => setForm({ ...form, customerType: t })}
@@ -393,7 +384,6 @@ function CustomerRow({
   const typeColors: Record<string, string> = {
     "Regular Client": "bg-blue-100 text-blue-700",
     "New Customer": "bg-green-100 text-green-700",
-    "VIP Member": "bg-amber-100 text-amber-700",
   }
   return (
     <motion.div

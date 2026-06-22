@@ -245,7 +245,7 @@ function LoginForm({
       <Field
         label="Username"
         icon={<User className="h-5 w-5" />}
-        placeholder={isKurir ? "Contoh: admin" : "username"}
+        placeholder={isKurir ? "Contoh: kurir" : "username"}
         value={username}
         onChange={setUsername}
       />
